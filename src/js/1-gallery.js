@@ -67,13 +67,17 @@ const images = [
 const createGalleryCard = image => {
   return `
     <li class="gallery-item">
-        <a class="gallery-link" href="${image.original} " onclick="return false">
+        <a class="gallery-link" href="${image.original}" onclick="return false">
         <img
             class="gallery-image"
             src="${image.preview}"
-            data-source="${image.original}"
             alt="${image.description}"
         />
         </a>
     </li>`;
 };
+
+const galleryCard = images.map(element => createGalleryCard(element)).join('');
+const elementGallery = document.querySelector('.gallery');
+
+elementGallery.innerHTML = galleryCard;

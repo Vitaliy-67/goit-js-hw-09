@@ -2,19 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-09/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-ChSZH1G_.css">
+    <script type="module" crossorigin src="/goit-js-hw-09/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/vendor-B-WyX8ve.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/index-ChSZH1G_.css">
   </head>
   <body>
     <main>
-      <iframe src="./1-gallery.html"></iframe>
-      <iframe src="./2-form.html"></iframe>
+      <section class="section">
+  <div class="container">
+    <ul class="gallery"></ul>
+  </div>
+</section>
+
+      <form class="feedback-form" autocomplete="off">
+  <div class="form-container">
+    <div class="input-container">
+      <label class="label-form"> Email </label>
+      <div class="input-wrap-email">
+        <input class="input-email" type="email" name="email" autofocus />
+      </div>
+      <label class="label-form"> Message </label>
+      <div class="input-wrap-message">
+        <textarea class="input-message" name="message" rows="8"></textarea>
+      </div>
+    </div>
+    <button class="button-form" type="submit">Submit</button>
+  </div>
+</form>
+
     </main>
-    <script src="./js/1-gallery.js" defer></script>
-    <script src="./js/2-form.js" defer></script>
-    <script src="./js/main.js" defer></script>
   </body>
 </html>

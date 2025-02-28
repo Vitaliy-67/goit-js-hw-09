@@ -41,9 +41,13 @@ const onFeedbackFormSubmit = event => {
     event.preventDefault();
     return alert('Fill please all fields');
   }
+  console.log(formData);
   const { currentTarget: formEL } = event;
   formEL.reset();
+  formData.email = '';
+  formData.message = '';
   localStorage.removeItem('feedback-form-state');
+  console.log(formData);
 };
 
 feedbackFormEl.addEventListener('input', onFormFieldChange);
